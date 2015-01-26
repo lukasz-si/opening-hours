@@ -1,0 +1,10 @@
+app/
+.idea/
+node_modules/
+bower_components/
+npm-debug.log
+.grunt/
+_SpecRunner.html
+test/code-coverage/coverage.json
+test/code-coverage/html/
+doc/

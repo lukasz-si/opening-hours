@@ -1,0 +1,30 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "private": false
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false,
+    "dateFormat": "ddd MMM Do YYYY",
+    "outputSourceFiles": false,
+    "outputSourcePath": false,
+    "systemName": "opening-hours",
+    "footer": "",
+    "copyright": "Lukasz",
+    "navType": "vertical",
+    "theme": "cerulean",
+    "linenums": true,
+    "collapseSymbols": false,
+    "inverseNav": true,
+    "highlightTutorialCode": true,
+    "protocol": "fred://"
+  },
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": false
+  }
+}
