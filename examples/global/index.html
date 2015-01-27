@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Opening Hours (global)</title>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../dist/opening-hours.js"></script>
+    <link href="../../dist/opening-hours.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: #484848;
+        }
+    </style>
+</head>
+<body>
+<div id="opening-hours"></div>
+
+<script>
+    var openingHours = new OpeningHours("#opening-hours", {});
+
+    console.log("OpeningHours loaded (global)");
+</script>
+</body>
+</html>

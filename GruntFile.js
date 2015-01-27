@@ -82,7 +82,7 @@ module.exports = function (grunt) {
 
                     // files to include along with almond. only main file is defined, as
                     // it pulls in the rest of the dependencies automatically.
-                    include: ["opening-hours"],
+                    include: ["js/OpeningHours"],
                     exclude: ["jquery"],
 
                     // code to wrap around the start / end of the resulting build file
@@ -106,9 +106,15 @@ module.exports = function (grunt) {
                 }
             }
         },
+        watch: {
+            scss: {
+                files: ['src/styles/sass/*.scss'],
+                tasks: ['sass']
+            }
+        },
         jasmine: {
             coverage: {
-                src: "src/**/*.js",
+                src: "src/js/**/*.js",
                 options: {
                     specs: 'test/unit/**/*Test.js',
                     template: require('grunt-template-jasmine-istanbul'),
@@ -174,6 +180,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task.
     grunt.registerTask('default', ['sass', 'jasmine:coverage', 'requirejs']);

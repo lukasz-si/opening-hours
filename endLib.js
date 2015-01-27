@@ -1,7 +1,7 @@
 
-//    define("jquery", function () {
-//        return $;
-//    });
+    define("jquery", function () {
+        return $;
+    });
 
-    return require("opening-hours");
+    return require("js/OpeningHours");
 }));

@@ -1,0 +1,85 @@
+$borderColor: #eeeeee;
+$backgroundColor: #484848;
+$fontColor: #dcdcdc;
+$backgroundColorSelected: #777777;
+$fontColorSelected: #fff;
+$arrowSize: 7px;
+
+.opening-hours {
+    text-align: center;
+
+    .title {
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        padding: 3px;
+        margin: 0;
+        color: #ffffcd;
+    }
+    .days {
+        text-align: center;
+
+        .day-wrapper {
+            display: inline-block;
+            margin: 4px;
+            font-size: 16px;
+            line-height: 25px;
+
+            .day {
+                border: {
+                    width: 1px;
+                    color: $borderColor;
+                    style: solid;
+                    radius: 3px;
+                }
+                color: $fontColor;
+                padding: 2px;
+                width: 30px;
+                height: 25px;
+                cursor: pointer;
+                background-color: $backgroundColor;
+            }
+            .arrow-down {
+                width: 0;
+                height: 0;
+                border-left: $arrowSize solid transparent;
+                border-right: $arrowSize solid transparent;
+
+                border-top: $arrowSize solid $borderColor;
+                margin: 0 auto;
+                visibility: hidden;
+            }
+            &.selected {
+                .day {
+                    background-color: $backgroundColorSelected;
+                    color: $fontColorSelected;
+                    cursor: default;
+                }
+                .arrow-down {
+                    visibility: visible;
+                }
+            }
+            &.closed {
+                .day {
+                    background-color: #440000;
+                    color: $fontColor;
+                }
+            }
+            &.closed.selected {
+                .day {
+                    background-color: #860000;
+                    color: $fontColorSelected;
+                }
+            }
+        }
+    }
+    .hours {
+        font: {
+            weight: bold;
+            size: 32px;
+            stretch: expanded;
+        }
+        text-align: center;
+        color: $fontColor;
+    }
+}
