@@ -1,3 +1,7 @@
+/*! opening-hours - v1.0.0 - 2015-01-27
+* see: https://github.com/lukasz-si/opening-hours
+* Copyright (c) 2015 Lukasz
+* Licensed: The MIT License (MIT) */
 (function(root, factory) {
 
     // Set up the app appropriately for the environment. Start with AMD.
@@ -454,9 +458,6 @@ define('js/OpeningHours',[
     };
 
     OpeningHours.prototype.validateOptions = function (options) {
-        if (!$.isPlainObject(options)) {
-            this._throwError('"options" is not an object');
-        }
         if (options.days.length !== 7) {
             this._throwError('number of days must be equal 7')
         }

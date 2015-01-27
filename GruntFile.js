@@ -11,7 +11,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
             '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-            '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
+            '<%= pkg.homepage ? "* see: " + pkg.homepage + "\\n" : "" %>' +
             '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             '* Licensed: <%= pkg.license.type %> */\n',
         // Task configuration.
@@ -21,7 +21,7 @@ module.exports = function (grunt) {
                 stripBanners: true
             },
             dist: {
-                src: ['src/<%= pkg.name %>.js'],
+                src: ['dist/<%= pkg.name %>.js'],
                 dest: 'dist/<%= pkg.name %>.js'
             }
         },
@@ -155,7 +155,7 @@ module.exports = function (grunt) {
                 banner: '<%= banner %>'
             },
             dist: {
-                src: 'src/<%= pkg.name %>.js',
+                src: 'dist/<%= pkg.name %>.js',
                 dest: 'dist/<%= pkg.name %>.min.js'
             }
         },
@@ -183,10 +183,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task.
-    grunt.registerTask('default', ['sass', 'jasmine:coverage', 'requirejs']);
+    grunt.registerTask('default', ['sass', 'jasmine:coverage', 'requirejs', 'concat', 'uglify']);
 
-    grunt.registerTask('prod', ['sass', 'requirejs', 'uglify']);
-    grunt.registerTask('release', ['sass', 'requirejs']);
     grunt.registerTask('doc', ['jsdoc']);
     grunt.registerTask('test', ['jasmine:coverage']);
 };

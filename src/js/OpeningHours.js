@@ -107,9 +107,6 @@ define([
     };
 
     OpeningHours.prototype.validateOptions = function (options) {
-        if (!$.isPlainObject(options)) {
-            this._throwError('"options" is not an object');
-        }
         if (options.days.length !== 7) {
             this._throwError('number of days must be equal 7')
         }
