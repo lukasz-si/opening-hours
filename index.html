@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Opening Hours DEMO</title>
+    <script src="../libs/jquery.min.js"></script>
+    <script src="../libs/opening-hours.js"></script>
+    <link href="../css/opening-hours.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: #484848;
+        }
+    </style>
+</head>
+<body>
+<div id="opening-hours"></div>
+
+<script>
+    var options = {},
+            openingHours = new OpeningHours("#opening-hours", options);
+
+    console.log("OpeningHours loaded");
+</script>
+</body>
+</html>
