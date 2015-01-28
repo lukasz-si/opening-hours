@@ -10,7 +10,7 @@ In order to use the library just copy js and css files from `/dist` folder:
  * `/dist/opening-hours.js` or `/dist/opening-hours.min.js`
  * `/dist/opening-hours.css`
 
-If you are using `bower` run this command:
+If you are using `bower`, run this command:
 
 ```
 $ bower install opening-hours
