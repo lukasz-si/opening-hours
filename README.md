@@ -2,6 +2,8 @@
 
 This JavaScript library can be useful to show opening hours. It is very easy to use and configure.
 
+![Example](/images/example.png)
+
 # Getting Started
 
 In order to use the library just copy js and css files from `/dist` folder:
@@ -49,10 +51,10 @@ If AMD is not available then `OpeningHours` constructor is assigned to `window` 
 
 ```html
 <script>
+
     var options = {},
         openingHours = new OpeningHours("#opening-hours", options);
 
-    console.log("OpeningHours loaded (global)");
 </script>
 
 ```

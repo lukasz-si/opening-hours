@@ -3,7 +3,7 @@ requirejs.config({
     paths: {
         OpeningHours: '../../dist/opening-hours',
         main: 'main',
-        jquery: '../../bower_components/jquery/dist/jquery'
+        jquery: '../libs/jquery.min'
     }
 });
 
