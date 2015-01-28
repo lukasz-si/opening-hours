@@ -4,7 +4,6 @@
 define(["OpeningHours", "jquery"], function (OpeningHours, $) {
     "use strict";
 
-
     var openingHours = new OpeningHours("#opening-hours", {});
 
     console.log("OpeningHours loaded (AMD)");

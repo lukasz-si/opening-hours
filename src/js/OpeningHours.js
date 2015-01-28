@@ -117,22 +117,25 @@ define([
     };
 
     OpeningHours.DEFAULT_OPTIONS = {
-        title: "Opening hours",
-        closedMsg: "Closed",
+        title: "Opening hours", /** the title of */
+        closedMsg: "Closed", /** the message is shown when "hours" property is null */
         days: [
+        /** describes all days of a week */
             {name: "Mo", hours: "10:00 - 18:00"},
+        /** "name" points a name of a day */
             {name: "Tu", hours: "10:00 - 18:00"},
             {name: "We", hours: "10:00 - 18:00"},
             {name: "Th", hours: "10:00 - 18:00"},
             {name: "Fr", hours: "10:00 - 18:00"},
             {name: "Sa", hours: null},
+        /** if "hours" is null then "closedMsg" is shown */
             {name: "Su", hours: null}
         ],
-        cellWidth: "30px",
-        cellHeight: "25px",
-        selectedDay: null,
-        firstDaySunday: false,
-        cssStyle: ""
+        cellWidth: "30px", /** cell width */
+        cellHeight: "25px", /** cell height */
+        selectedDay: null, /** indicates which day should be selected on start, Sunday is 0, Monday is 1, etc. */
+        firstDaySunday: false, /** indicates if the first day of a week is Sunday */
+        cssStyle: ""                                 /** adds user custom css selector just to easily override default styles */
     };
 
     return OpeningHours;
