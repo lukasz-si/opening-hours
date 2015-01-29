@@ -4,15 +4,29 @@
     "main": [
         "dist/opening-hours.js"
     ],
+    "version": "1.0.0",
+    "authors": ["Lukasz"],
+    "license": {
+        "type": "The MIT License (MIT)"
+    },
+    "homepage": "https://github.com/lukasz-si/opening-hours",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/lukasz-si/opening-hours.git"
+    },
+    "ignore": [
+        "/*",
+        "",
+        "!/dist"
+    ],
     "keywords": [
         "opening",
-        "hours",
-        "indicator"
+        "hours"
     ],
     "devDependencies": {
-        "requirejs": "latest",
-        "jquery": "latest"
+        "requirejs": "latest"
     },
     "dependencies": {
+        "jquery": "latest"
     }
 }

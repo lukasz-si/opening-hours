@@ -1,11 +1,5 @@
 {
     "name": "opening-hours",
-    "version": "1.0.0",
-    "author": "Lukasz",
-    "license": {
-        "type": "The MIT License (MIT)"
-    },
-    "homepage": "https://github.com/lukasz-si/opening-hours",
     "devDependencies": {
         "fs-sync": "latest",
         "grunt": "^0.4.5",
