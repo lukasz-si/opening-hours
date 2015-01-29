@@ -5,13 +5,61 @@
     <title>Opening Hours (AMD)</title>
     <script data-main="require-main" src="libs/require.min.js"></script>
     <link href="css/opening-hours.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/sunlight.default.css"/>
     <style>
         body {
             background-color: #484848;
+            color: #dcdcdc;
+        }
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
+<h1>First Example - default options</h1>
 <div id="opening-hours"></div>
+
+<div class="wrapper">
+<pre class="sunlight-highlight-xml">
+&lt;div id="opening-hours"&gt;&lt;/div&gt;
+&lt;script&gt;<code class="sunlight-highlight-javascript">
+    var openingHours = new OpeningHours("#opening-hours", {});</code>
+&lt;/script&gt;
+</pre>
+</div>
+
+<h1>Second Example - Sunday is the first day of a week, Monday is always selected on start, bigger cells</h1>
+<div id="opening-hours2"></div>
+
+<div class="wrapper">
+<pre class="sunlight-highlight-xml">
+&lt;div id="opening-hours2"&gt;&lt;/div&gt;
+&lt;script&gt;<code class="sunlight-highlight-javascript">
+    var options = {
+        title: "Opening hours",
+        closedMsg: "Closed",
+        days: [
+            {name: "Su", hours: null},
+            {name: "Mo", hours: "09:00 - 19:00"},
+            {name: "Tu", hours: "10:00 - 20:00"},
+            {name: "We", hours: "11:00 - 21:00"},
+            {name: "Th", hours: "10:30 - 18:30"},
+            {name: "Fr", hours: "08:00 - 15:30"},
+            {name: "Sa", hours: null}
+        ],
+        cellWidth: "35px",
+        cellHeight: "30px",
+        selectedDay: 1,
+        firstDaySunday: true,
+        cssStyle: ""
+    };
+    new OpeningHours("#opening-hours2", options);</code>
+&lt;/script&gt;
+</pre>
+</div>
+<br>
+<br>
 </body>
 </html>
