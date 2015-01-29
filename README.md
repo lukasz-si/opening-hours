@@ -9,7 +9,7 @@ This JavaScript library can be useful to show opening hours. It is very easy to 
 # Getting Started
 
 In order to use the library just copy js and css files from `/dist` folder:
- * `/dist/opening-hours.js` or `/dist/opening-hours.min.js`
+ * `/dist/opening-hours.js` or minified version `/dist/opening-hours.min.js`
  * `/dist/opening-hours.css`
 
 If you are using `bower`, run this command:
@@ -31,6 +31,10 @@ Or add `opening-hours` to your apps `bower.json`:
 Requires jQuery library.
 
 ## Usage
+
+The `OpeningHours` constructor takes two arguments:
+ * {String} CSS selector
+ * {Object} Options
 
 #### AMD users (e.g. require.js library)
 
