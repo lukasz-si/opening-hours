@@ -8,11 +8,11 @@ module.exports = function (grunt) {
     // Project configuration.
     grunt.initConfig({
         // Metadata.
-        pkg: grunt.file.readJSON('package.json'),
+        pkg: grunt.file.readJSON('bower.json'),
         banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
             '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
             '<%= pkg.homepage ? "* see: " + pkg.homepage + "\\n" : "" %>' +
-            '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.authors.join(", ") %>\n' +
             '* Licensed: <%= pkg.license.type %> */\n',
         // Task configuration.
         concat: {
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
                     paths: paths,
                     // build file destination, relative to the build file itself
                     out: function (text, sourceMapText) {
-                        var configFile = grunt.file.readJSON('package.json'),
+                        var configFile = grunt.file.readJSON('bower.json'),
                             version = configFile.version,
                             newDirectory = "dist/" + version,
                             appendVersion = false;
