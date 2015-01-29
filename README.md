@@ -40,8 +40,7 @@ The library detects if AMD is used and defines new module called `OpeningHours`.
 define(["OpeningHours"], function (OpeningHours) {
     "use strict";
 
-    var options = {},
-        openingHours = new OpeningHours("#opening-hours-container", options);
+    var openingHours = new OpeningHours("#opening-hours-container", {});
 });
 ```
 
@@ -54,11 +53,9 @@ If AMD is not available then `OpeningHours` constructor is assigned to `window` 
 ```html
 <script>
 
-    var options = {},
-        openingHours = new OpeningHours("#opening-hours", options);
+    var openingHours = new OpeningHours("#opening-hours", {});
 
 </script>
-
 ```
 
 Please check `/examples/global/`.
