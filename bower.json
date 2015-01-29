@@ -17,7 +17,9 @@
     "ignore": [
         "/*",
         "",
-        "!/dist"
+        "!/dist",
+        "!/src",
+        "!LICENSE"
     ],
     "keywords": [
         "opening",
