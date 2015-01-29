@@ -16,11 +16,11 @@ define(["OpeningHours", "jquery"], function (OpeningHours, $) {
             {name: "Sa", hours: "10:00 - 18:00"},
             {name: "Su", hours: null}
         ],
-        cellWidth: "30px",
-        cellHeight: "25px",
+        cellWidth: "35px",
+        cellHeight: "30px",
         selectedDay: null,
         firstDaySunday: false,
-        cssStyle: "my-styles"
+        cssStyle: ""
     });
 
     console.log("OpeningHours loaded (dev)");

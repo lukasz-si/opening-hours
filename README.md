@@ -77,8 +77,8 @@ var options = {
         {name: "Sa", hours: null},               /** if "hours" is null then "closedMsg" is shown */
         {name: "Su", hours: null}
     ],
-    cellWidth: "30px",                           /** cell width */
-    cellHeight: "25px",                          /** cell height */
+    cellWidth: "35px",                           /** cell width */
+    cellHeight: "30px",                          /** cell height */
     selectedDay: null,                           /** indicates which day should be selected on start, Sunday is 0, Monday is 1, etc. */
     firstDaySunday: false,                       /** indicates if the first day of a week is Sunday */
     cssStyle: ""                                 /** adds user custom css selector just to easily override default styles */

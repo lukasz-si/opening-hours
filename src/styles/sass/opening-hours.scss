@@ -33,11 +33,12 @@ $arrowSize: 7px;
                     radius: 3px;
                 }
                 color: $fontColor;
-                padding: 2px;
                 width: 30px;
                 height: 25px;
                 cursor: pointer;
                 background-color: $backgroundColor;
+                display: table-cell;
+                vertical-align: middle;
             }
             .arrow-down {
                 width: 0;
