@@ -4,6 +4,8 @@ This JavaScript library can be useful to show opening hours. It is very easy to 
 
 ![Example](/images/example.png)
 
+[See demo](http://lukasz-si.github.io/opening-hours/)
+
 # Getting Started
 
 In order to use the library just copy js and css files from `/dist` folder:
