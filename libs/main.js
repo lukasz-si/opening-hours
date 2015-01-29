@@ -22,8 +22,8 @@ define(["OpeningHours", "sunlight", "jquery", "sunlight-xml", "sunlight-javascri
             {name: "Fr", hours: "08:00 - 15:30"},
             {name: "Sa", hours: null}
         ],
-        cellWidth: "35px",
-        cellHeight: "30px",
+        cellWidth: "45px",
+        cellHeight: "40px",
         selectedDay: 1,
         firstDaySunday: true,
         cssStyle: ""
