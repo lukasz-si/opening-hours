@@ -1,4 +1,4 @@
-/*! opening-hours - v1.0.0 - 2015-01-29
+/*! opening-hours - v1.0.0 - 2015-01-30
 * see: https://github.com/lukasz-si/opening-hours
 * Copyright (c) 2015 Lukasz
 * Licensed: The MIT License (MIT) */
